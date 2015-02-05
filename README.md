@@ -1,11 +1,11 @@
-# hexo-browser-sync
+# hexo-browsersync
 
 [BrowserSync] plugin for [Hexo].
 
 ## Installation
 
 ``` bash
-$ npm install hexo-browser-sync --save
+$ npm install hexo-browsersync --save
 ```
 
 ## License
