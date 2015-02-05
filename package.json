@@ -22,7 +22,9 @@
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.0.0-rc3"
+    "bluebird": "^2.9.4",
+    "browser-sync": "^2.0.0-rc3",
+    "connect-injector": "^0.4.2"
   },
   "devDependencies": {
     "chai": "^1.9.1",

@@ -1,4 +1,4 @@
-# hexo-server
+# hexo-browser-sync
 
 [BrowserSync] plugin for [Hexo].
 
