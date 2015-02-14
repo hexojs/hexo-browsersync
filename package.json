@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^2.9.4",
-    "browser-sync": "^2.0.0-rc3",
+    "browser-sync": "^2.0.1",
     "connect-injector": "^0.4.2"
   },
   "devDependencies": {
@@ -34,11 +34,8 @@
     "gulp-jshint": "^1.8.6",
     "gulp-load-plugins": "^0.8.0",
     "gulp-mocha": "^2.0.0",
-    "hexo": "^3.0.0-rc.2",
-    "hexo-fs": "0.0.8",
     "jshint-stylish": "^1.0.0",
     "mocha": "^2.0.1",
-    "rimraf": "^2.2.8",
-    "supertest": "^0.15.0"
+    "rimraf": "^2.2.8"
   }
 }
