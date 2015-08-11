@@ -24,7 +24,8 @@
   "dependencies": {
     "bluebird": "^2.9.4",
     "browser-sync": "^2.0.1",
-    "connect-injector": "^0.4.2"
+    "connect-injector": "^0.4.2",
+    "merge": "^1.2.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
