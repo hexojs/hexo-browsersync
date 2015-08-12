@@ -8,6 +8,10 @@
 $ npm install hexo-browsersync --save
 ```
 
+## Options
+
+You can check [BrowserSync options](http://www.browsersync.io/docs/options/) for more info. `logSnippet` is disable by default.
+
 ## License
 
 MIT
