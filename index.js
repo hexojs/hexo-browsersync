@@ -1,3 +1,3 @@
 'use strict';
-
-hexo.extend.filter.register('server_middleware', require('./lib/browsersync'), 1);
+var filter = require('./lib/browsersync');
+hexo.extend.filter.register('server_middleware', filter, 1);

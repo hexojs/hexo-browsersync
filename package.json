@@ -4,7 +4,10 @@
   "description": "BrowserSync plugin of Hexo.",
   "main": "index",
   "scripts": {
-    "test": "gulp test"
+    "clean": "rm -rf .nyc_output coverage",
+    "test-style": "jshint {index,lib/browsersync,test/index}.js",
+    "test-mocha": "nyc mocha --timeout=9000",
+    "test": "run-s test-*"
   },
   "directories": {
     "lib": "./lib"
@@ -22,21 +25,21 @@
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^2.9.4",
-    "browser-sync": "^2.0.1",
-    "connect-injector": "^0.4.2",
-    "merge": "^1.2.0"
+    "browser-sync": "^2.18.13",
+    "connect-injector": "^0.4.4"
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "coveralls": "^2.11.2",
-    "gulp": "^3.8.9",
-    "gulp-istanbul": "^0.5.0",
-    "gulp-jshint": "^1.8.6",
-    "gulp-load-plugins": "^0.8.0",
-    "gulp-mocha": "^2.0.0",
-    "jshint-stylish": "^1.0.0",
-    "mocha": "^2.0.1",
-    "rimraf": "^2.2.8"
+    "coveralls": "^3.0.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "mocha": "^4.0.1",
+    "npm-run-all": "^4.1.2",
+    "nyc": "^11.3.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
   }
 }
