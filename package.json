@@ -1,6 +1,6 @@
 {
   "name": "hexo-browsersync",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "BrowserSync plugin of Hexo.",
   "main": "index",
   "scripts": {
