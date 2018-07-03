@@ -21,11 +21,12 @@ browsersync:
   logLevel: "warn"
   ghostMode:
     scroll: true
+  instanceName: "uniqueString"
 ````
 
 You can check [BrowserSync options](http://www.browsersync.io/docs/options/) for more info. 
 
-N.B.: `logSnippet` is disabled by default.
+N.B.: `logSnippet` is disabled by default. Also, `instanceName` allows you to [create a named instance](https://www.browsersync.io/docs/api#api-create). The default value is `undefined` (anonymous instance).
 
 ## License
 
