@@ -32,7 +32,7 @@
     "coveralls": "^3.0.0",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
-    "mocha": "^4.0.1",
+    "mocha": "^5.2.0",
     "npm-run-all": "^4.1.2",
     "nyc": "^11.3.0"
   },
