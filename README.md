@@ -1,5 +1,7 @@
 # hexo-browsersync
 
+[![Build Status](https://travis-ci.org/hexojs/hexo-browsersync.svg?branch=master)](https://travis-ci.org/hexojs/hexo-browsersync)  [![NPM version](https://badge.fury.io/js/hexo-browsersync.svg)](https://badge.fury.io/js/hexo-browsersync) 
+
 [BrowserSync] plugin for [Hexo].
 
 ## Installation
