@@ -34,7 +34,7 @@
     "jshint-stylish": "^2.2.1",
     "mocha": "^6.0.2",
     "npm-run-all": "^4.1.2",
-    "nyc": "^11.3.0"
+    "nyc": "^14.1.0"
   },
   "nyc": {
     "reporter": [
