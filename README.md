@@ -1,6 +1,7 @@
 # hexo-browsersync
 
-[![Build Status](https://travis-ci.org/hexojs/hexo-browsersync.svg?branch=master)](https://travis-ci.org/hexojs/hexo-browsersync)  [![NPM version](https://badge.fury.io/js/hexo-browsersync.svg)](https://badge.fury.io/js/hexo-browsersync) 
+[![Build Status](https://travis-ci.org/hexojs/hexo-browsersync.svg?branch=master)](https://travis-ci.org/hexojs/hexo-browsersync)  [![NPM version](https://badge.fury.io/js/hexo-browsersync.svg)](https://badge.fury.io/js/hexo-browsersync)  [![Build status](https://ci.appveyor.com/api/projects/status/k0pbbpttxwwdloc5?svg=true)](https://ci.appveyor.com/project/tomap/hexo-browsersync-xxjnt)
+
 
 [BrowserSync] plugin for [Hexo].
 
