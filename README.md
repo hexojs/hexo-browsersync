@@ -22,11 +22,14 @@ browsersync:
   ghostMode:
     scroll: true
   instanceName: "uniqueString"
+  injectTag: "<body>"
 ````
 
 You can check [BrowserSync options](http://www.browsersync.io/docs/options/) for more info. 
 
-N.B.: `logSnippet` is disabled by default. Also, `instanceName` allows you to [create a named instance](https://www.browsersync.io/docs/api#api-create). The default value is `undefined` (anonymous instance).
+N.B.:
+`logSnippet` is disabled by default. Also, `instanceName` allows you to [create a named instance](https://www.browsersync.io/docs/api#api-create). The default value is `undefined` (anonymous instance).
+`injectTag` is `</ body>` by default. Change tags to inject Browsersync snippets.
 
 ## License
 
