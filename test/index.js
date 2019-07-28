@@ -1,34 +1,34 @@
 'use strict';
 
-var assert = require('assert');
+const assert = require('assert');
 
 function noop() {}
 
-describe('hexo-browsersync', function() {
-  var filter,
-    bs;
+describe('hexo-browsersync', () => {
+  let filter = {};
+  let bs = {};
 
-  var hexoEvents = {};
-  var bsEvents = {};
+  const hexoEvents = {};
+  const bsEvents = {};
 
-  var mockHexo = {
+  const mockHexo = {
     extend: {
       filter: {
         register: noop
       }
     },
     config: {},
-    on: function(key, val) {
+    on: (key, val) => {
       hexoEvents[key] = val;
     },
     route: {
-      on: function(key, val) {
+      on: (key, val) => {
         bsEvents[key] = val;
       }
     }
   };
 
-  var mockApp = {
+  const mockApp = {
     use: noop
   };
 
@@ -37,7 +37,7 @@ describe('hexo-browsersync', function() {
   require('../index');
   filter = require('../lib/browsersync').bind(mockHexo);
 
-  it('initializes', function() {
+  it('initializes', () => {
     filter(mockApp);
     assert.equal(typeof mockHexo.browsersync, 'object');
     assert.equal(typeof mockHexo.browsersync.condition, 'function');
@@ -45,20 +45,20 @@ describe('hexo-browsersync', function() {
     bs = mockHexo.browsersync;
   });
 
-  it('browsersync initializes', function(done) {
-    mockHexo.browsersync.emitter.on('init', function() {
+  it('browsersync initializes', done => {
+    mockHexo.browsersync.emitter.on('init', () => {
       done();
     });
   });
 
-  it('runs the condition', function() {
-    var mockResHtml = {
-      getHeader: function() {
+  it('runs the condition', () => {
+    const mockResHtml = {
+      getHeader: () => {
         return 'text/html';
       }
     };
-    var mockResText = {
-      getHeader: function() {
+    const mockResText = {
+      getHeader: () => {
         return 'text/plain';
       }
     };
@@ -66,29 +66,29 @@ describe('hexo-browsersync', function() {
     bs.condition(null, mockResText);
   });
 
-  it('runs the converter', function() {
-    var contentBody = '<html><body></body></html>';
-    var contentNoBody = 'just text';
-    bs.converter(contentBody, null, null, function(err, res) {
+  it('runs the converter', () => {
+    const contentBody = '<html><body></body></html>';
+    const contentNoBody = 'just text';
+    bs.converter(contentBody, null, null, (err, res) => {
       assert.equal(err, null);
       assert(res.indexOf('script') > -1);
     });
-    bs.converter(contentNoBody, null, null, function(err, res) {
+    bs.converter(contentNoBody, null, null, (err, res) => {
       assert.equal(err, null);
       assert.equal(res, contentNoBody);
     });
   });
 
-  it('fires events', function() {
-    Object.keys(hexoEvents).forEach(function(key) {
+  it('fires events', () => {
+    Object.keys(hexoEvents).forEach(key => {
       hexoEvents[key]();
     });
-    Object.keys(bsEvents).forEach(function(key) {
+    Object.keys(bsEvents).forEach(key => {
       bsEvents[key]();
     });
   });
 
-  it('exits', function() {
+  it('exits', () => {
     // hexoEvents.exit();
     mockHexo.browsersync.exit();
   });
