@@ -13,7 +13,7 @@
     "lib": "./lib"
   },
   "engines": {
-    "node": ">= 6"
+    "node": ">= 8.6.0"
   },
   "repository": "hexojs/hexo-browser-sync",
   "homepage": "http://hexo.io/",
