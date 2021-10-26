@@ -1,6 +1,6 @@
 {
   "name": "hexo-browsersync",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "BrowserSync plugin of Hexo.",
   "main": "index",
   "scripts": {
@@ -13,10 +13,10 @@
     "lib": "./lib"
   },
   "engines": {
-    "node": ">= 8.6.0"
+    "node": ">= 12"
   },
-  "repository": "hexojs/hexo-browser-sync",
-  "homepage": "http://hexo.io/",
+  "repository": "hexojs/hexo-browsersync",
+  "homepage": "https://hexo.io/",
   "keywords": [
     "hexo",
     "browsersync",
