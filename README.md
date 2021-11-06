@@ -1,8 +1,7 @@
 # hexo-browsersync
 
-[![Build Status](https://travis-ci.org/hexojs/hexo-browsersync.svg?branch=master)](https://travis-ci.org/hexojs/hexo-browsersync)
+
 [![NPM version](https://badge.fury.io/js/hexo-browsersync.svg)](https://www.npmjs.com/package/hexo-browsersync)
-[![Build status](https://ci.appveyor.com/api/projects/status/k0pbbpttxwwdloc5?svg=true)](https://ci.appveyor.com/project/tomap/hexo-browsersync-xxjnt)
 [![Coverage Status](https://coveralls.io/repos/github/hexojs/hexo-browsersync/badge.svg?branch=master)](https://coveralls.io/github/hexojs/hexo-browsersync?branch=master)
 
 [BrowserSync] plugin for [Hexo].
@@ -29,7 +28,7 @@ browsersync:
   instanceName: "uniqueString"
 ````
 
-You can check [BrowserSync options](http://www.browsersync.io/docs/options/) for more info. 
+You can check [BrowserSync options](https://www.browsersync.io/docs/options/) for more info. 
 
 N.B.: `logSnippet` is disabled by default. Also, `instanceName` allows you to [create a named instance](https://www.browsersync.io/docs/api#api-create). The default value is `undefined` (anonymous instance).
 
@@ -37,5 +36,5 @@ N.B.: `logSnippet` is disabled by default. Also, `instanceName` allows you to [c
 
 MIT
 
-[BrowserSync]: http://www.browsersync.io/
-[Hexo]: http://hexo.io/
+[BrowserSync]: https://www.browsersync.io/
+[Hexo]: https://hexo.io/
