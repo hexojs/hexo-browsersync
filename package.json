@@ -1,7 +1,7 @@
 {
   "name": "hexo-browsersync",
-  "version": "0.3.0",
-  "description": "BrowserSync plugin of Hexo.",
+  "version": "2.0.0",
+  "description": "BrowserSync plugin of Hexo",
   "main": "index",
   "scripts": {
     "clean": "rm -rf .nyc_output coverage",
@@ -13,27 +13,27 @@
     "lib": "./lib"
   },
   "engines": {
-    "node": ">= 8.6.0"
+    "node": ">= 12"
   },
-  "repository": "hexojs/hexo-browser-sync",
-  "homepage": "http://hexo.io/",
+  "repository": "hexojs/hexo-browsersync",
+  "homepage": "https://hexo.io/",
   "keywords": [
     "hexo",
     "browsersync",
     "browser-sync"
   ],
-  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "author": "Tommy Chen <tommy351@gmail.com> (https://zespia.tw)",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.27.7",
     "connect-injector": "^0.4.4"
   },
   "devDependencies": {
-    "coveralls": "^3.0.4",
-    "eslint": "^7.22.0",
-    "eslint-config-hexo": "^4.1.0",
-    "mocha": "^6.1.4",
+    "coveralls": "^3.1.1",
+    "eslint": "^7.32.0",
+    "eslint-config-hexo": "^4.2.0",
+    "mocha": "^6.2.3",
     "npm-run-all": "^4.1.5",
-    "nyc": "^15.0.0"
+    "nyc": "^15.1.0"
   }
 }
