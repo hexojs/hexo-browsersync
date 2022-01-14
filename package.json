@@ -7,7 +7,7 @@
     "clean": "rm -rf .nyc_output coverage",
     "eslint": "eslint .",
     "test": "mocha test/index.js",
-    "test-cov": "nyc npm run test"
+    "test-cov": "nyc --reporter=lcovonly npm run test"
   },
   "directories": {
     "lib": "./lib"
