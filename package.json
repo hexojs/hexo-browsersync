@@ -25,7 +25,7 @@
   "author": "Tommy Chen <tommy351@gmail.com> (https://zespia.tw)",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^3.0.2",
     "connect-injector": "^0.4.4"
   },
   "devDependencies": {
